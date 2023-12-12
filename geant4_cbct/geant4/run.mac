@@ -1,0 +1,18 @@
+/CBCT/det/setPhantomRotation 0.0 deg
+/run/numberOfThreads 4
+/run/initialize
+/run/printProgress 1000000
+/gps/verbose 0
+/gps/particle gamma
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/halfx 0.025 mm
+/gps/pos/halfy 0.025 mm
+/gps/pos/centre 0. 0. -150. mm
+/gps/ang/type iso
+/gps/ang/maxtheta 6.8 deg
+/gps/ene/type Arb
+/gps/hist/file ../spectrum/160.txt
+/gps/hist/inter Lin
+/analysis/setFileName ../../output/0.root
+/run/beamOn 10000000
